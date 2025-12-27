@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UrgentHelp — Mehrdad Delir</title>
+  <style>
+    body{background:#020617;color:#e5e7eb;font-family:system-ui;line-height:1.8;margin:0}
+    header{position:sticky;top:0;background:rgba(2,6,23,.92);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1f2937}
+    header .logo{font-weight:700;color:#38bdf8}
+    header nav a{color:#e5e7eb;margin-left:14px;text-decoration:none;font-size:.9rem}
+    header nav a:hover{color:#38bdf8}
+    .wrap{max-width:960px;margin:0 auto;padding:20px 16px 40px}
+    h1{font-size:1.8rem;margin-bottom:8px} h2{font-size:1.25rem;margin-bottom:6px} h3{font-size:1.05rem;margin-bottom:4px}
+    .card{background:#0f172a;border-radius:18px;padding:18px;margin:18px 0;border:1px solid rgba(148,163,184,.25)}
+    .lang-menu{margin-top:18px;margin-bottom:4px;display:flex;flex-wrap:wrap;gap:6px}
+    .lang-menu button{padding:7px 11px;border:1px solid #1f2937;border-radius:999px;background:#0f172a;color:#e5e7eb;cursor:pointer}
+    .lang-menu button.active{background:#38bdf8;color:#020617;border-color:#38bdf8}
+    ul{padding-left:20px;margin-top:4px} li{margin-bottom:3px}
+    .danger{color:#f97373;font-weight:600}
+  </style>
+  <script>
+    function switchLang(lang){
+      document.querySelectorAll('.lang').forEach(el=>el.style.display='none');
+      document.querySelectorAll('.lang-menu button').forEach(btn=>btn.classList.remove('active'));
+      document.getElementById('lang-'+lang).style.display='block';
+      document.getElementById('btn-'+lang).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="logo">UrgentHelp · Mehrdad Delir</div>
+  <nav>
+    <a href="#report">Report</a>
+    <a href="#support">Support</a>
+    <a href="#donation">Donation</a>
+    <a href="#sources">Sources</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="wrap lang-menu">
+  <strong>Select Language:</strong>
+  <button onclick="switchLang('en')" id="btn-en" class="active">English</button>
+  <button onclick="switchLang('fa')" id="btn-fa">فارسی</button>
+  <button onclick="switchLang('es')" id="btn-es">Español</button>
+</div>
+
+<!-- ENGLISH -->
+<div class="wrap lang" id="lang-en">
+  <h1 id="report">Multisource Report & Personal Testimony</h1>
+  <p class="card">Chapters 1–7 with testimony and references (NYT, Washington Post, BBC, Iran International)…</p>
+
+  <div class="card" id="support">
+    <h2>My Appeal: Help Me Survive</h2>
+    <p><strong>Please be my lifeline. Help me stay alive.</strong></p>
+  </div>
+
+  <div class="card" id="donation">
+    <h2>Donation & Payment Options</h2>
+    <p>All accounts are registered under the name <strong>Mehrdad Dalir</strong>.</p>
+    <h3>🇹🇷 Turkish Lira (TRY)</h3>
+    <p>IBAN: <strong>TR60 0001 0012 4078 8760 0250 01</strong><br>Bank: Ziraat Bankası<br><em>Supports Western Union.</em></p>
+    <h3>💵 US Dollars (USD)</h3>
+    <p>IBAN: <strong>TR06 0001 0012 4078 8760 0250 03</strong><br>Bank: Ziraat Bankası</p>
+    <h3>💶 Euros (EUR)</h3>
+    <p>IBAN: <strong>TR76 0001 0012 4078 8760 0250 04</strong><br>Bank: Ziraat Bankası</p>
+  </div>
+
+  <div class="card" id="sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>New York Times</li>
+      <li>Washington Post</li>
+      <li>BBC</li>
+      <li>Iran International</li>
+    </ul>
+  </div>
+
+  <div class="card" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <strong>mehrdad.dalir2025@gmail.com</strong></p>
+  </div>
+</div>
+
+<!-- FARSI -->
+<div class="wrap lang" id="lang-fa" style="display:none">
+  <h1>گزارش چندمنبعی و شهادت شخصی</h1>
+  <p class="card">فصل‌های ۱ تا ۷ با شهادت و منابع (نیویورک‌تایمز، واشنگتن‌پست، بی‌بی‌سی، ایران‌اینترنشنال)…</p>
+
+  <div class="card" id="support-fa">
+    <h2>درخواست من: کمک برای زنده ماندن</h2>
+    <p><strong>حامی جان من باشید. کمک کنید زنده بمانم.</strong></p>
+  </div>
+
+  <div class="card" id="donation-fa">
+    <h2>روش‌های پرداخت و حمایت مالی</h2>
+    <p>همه حساب‌ها به نام <strong>مهرداد دلیر</strong> هستند.</p>
+    <h3>🇹🇷 پرداخت به لیر (TRY)</h3>
+    <p>شبا: <strong>TR60 0001 0012 4078 8760 0250 01</strong><br>بانک: زراعت بانک<br><em>قابل استفاده برای وسترن یونیون.</em></p>
+    <h3>💵 پرداخت به دلار (USD)</h3>
+    <p>شبا: <strong>TR06 0001 0012 4078 8760 0250 03</strong><br>بانک: زراعت بانک</p>
+    <h3>💶 پرداخت به یورو (EUR)</h3>
+    <p>شبا: <strong>TR76 0001 0012 4078 8760 0250 04</strong><br>بانک: زراعت بانک</p>
+  </div>
+
+  <div class="card" id="sources-fa">
+    <h2>منابع</h2>
+    <ul>
+      <li>نیویورک‌تایمز</li>
+      <li>واشنگتن‌پست</li>
+      <li>بی‌بی‌سی</li>
+      <li>ایران‌اینترنشنال</li>
+    </ul>
+  </div>
+
+  <div class="card" id="contact-fa">
+    <h2>تماس</h2>
+    <p>ایمیل: <strong>mehrdad.dalir2025@gmail.com</strong></p>
+  </div>
+</div>
+
+<!-- SPANISH -->
+<div class="wrap lang" id="lang-es" style="display:none">
+  <h1>Informe Multifuente y Testimonio Personal</h1>
+  <p class="card">Capítulos 1–7 con testimonio y fuentes (NYT, Washington Post, BBC, Iran International)…</p>
+
+  <div class="card" id="support-es">
+    <h2>Mi Petición: Ayúdame a Sobrevivir</h2>
+    <p><strong>Por favor, sé mi salvavidas. Ayúdame a seguir  
