@@ -1,1 +1,532 @@
-# urgenthelp
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UrgentHelp — Mehrdad Delir</title>
+  <meta name="description" content="Multisource report and personal testimony of Mehrdad Delir. Read in your language and help save a life.">
+  <style>
+    :root{--bg:#020617;--card:#0f172a;--text:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;--accent2:#22d3ee;--border:#1f2937;--danger:#f97373}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(circle at 20% 0%, #0f172a 0, #030712 60%, #000 100%);color:var(--text);
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif;line-height:1.85}
+    header{position:sticky;top:0;background:rgba(3,7,18,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);
+      z-index:100;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+    header .logo{color:var(--accent);font-weight:800;letter-spacing:.04em}
+    header nav a{color:var(--text);opacity:.85;text-decoration:none;margin-left:14px;font-size:.92rem}
+    header nav a:hover{color:var(--accent)}
+    .wrap{max-width:980px;margin:0 auto;padding:20px 16px 40px}
+    h1{font-size:1.85rem;margin:0 0 8px;color:var(--accent)}
+    h2{font-size:1.28rem;margin:0 0 6px;color:var(--accent)}
+    .tagline{color:var(--muted);font-size:.95rem;margin-bottom:10px}
+    .note{color:var(--muted);font-size:.85rem;margin-bottom:8px}
+    .card{background:linear-gradient(135deg, rgba(15,23,42,.96), rgba(15,23,42,.88));border:1px solid rgba(148,163,184,.25);
+      border-radius:18px;padding:18px;margin:18px 0;box-shadow:0 18px 40px rgba(2,6,23,.7)}
+    ul{padding-left:20px;margin:6px 0}
+    li{margin-bottom:6px}
+    .btn{display:inline-block;padding:10px 18px;border-radius:999px;background:var(--accent);color:#020617;font-weight:700;text-decoration:none;
+      box-shadow:0 14px 32px rgba(56,189,248,.35);transition:.18s;margin-top:10px}
+    .btn:hover{background:var(--accent2);transform:translateY(-1px)}
+    .danger{color:var(--danger);font-weight:700}
+    .source-list li a{color:var(--text);text-decoration:none}
+    .source-list li a:hover{color:var(--accent)}
+    /* Tabs */
+    .lang-tabs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 10px}
+    .lang-tabs button{padding:8px 12px;border-radius:999px;border:1px solid rgba(148,163,184,.4);background:rgba(15,23,42,.9);color:var(--text);
+      cursor:pointer;font-weight:600;font-size:.85rem;transition:.16s}
+    .lang-tabs button:hover{border-color:var(--accent);color:var(--accent)}
+    .lang-tabs button.active{background:var(--accent);color:#020617;border-color:var(--accent)}
+    .tab-content{display:none}
+    .tab-content.active{display:block}
+    .rtl{direction:rtl;text-align:justify}
+    @media (max-width:680px){
+      header nav{display:none}
+      h1{font-size:1.55rem}
+      .wrap{padding:16px 14px 30px}
+      .card{padding:14px}
+    }
+  </style>
+</head>
+<body>
+
+<header aria-label="Top navigation">
+  <div class="logo">UrgentHelp · Mehrdad Delir</div>
+  <nav>
+    <a href="#report">Report</a>
+    <a href="#crisis">My crisis</a>
+    <a href="#support">Support</a>
+    <a href="#accounts">Accounts</a>
+    <a href="#sources">Sources</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="lang-tabs" role="tablist" aria-label="Language tabs">
+    <button onclick="openTab('en')" id="tab-en" class="active" role="tab" aria-selected="true" aria-controls="content-en">English</button>
+    <button onclick="openTab('fa')" id="tab-fa" role="tab" aria-selected="false" aria-controls="content-fa">فارسی</button>
+    <button onclick="openTab('es')" id="tab-es" role="tab" aria-selected="false" aria-controls="content-es">Español</button>
+    <button onclick="openTab('de')" id="tab-de" role="tab" aria-selected="false" aria-controls="content-de">Deutsch</button>
+    <button onclick="openTab('ru')" id="tab-ru" role="tab" aria-selected="false" aria-controls="content-ru">Русский</button>
+    <button onclick="openTab('fr')" id="tab-fr" role="tab" aria-selected="false" aria-controls="content-fr">Français</button>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="tab-content active" id="content-en" role="tabpanel" aria-labelledby="tab-en">
+    <h1 id="report">Multisource report and personal testimony</h1>
+    <p class="tagline">A documented crisis, and one life fighting to survive.</p>
+    <p class="note">Based on reports from The New York Times, The Washington Post, BBC, Iran International — and my own experience.</p>
+
+    <div class="card">
+      <h2>Chapter 1 — A global crisis and a personal story</h2>
+      <p>
+        Major media — <strong>The New York Times</strong>, <strong>The Washington Post</strong>, <strong>BBC</strong>, <strong>Iran International</strong> —
+        documented forced deportations of Iranians from the United States to Iran: fear, coercion, and severe human rights risks.
+      </p>
+      <p>For me, <strong>Mehrdad Delir</strong>, this is not distant news. It mirrors what I survived.</p>
+    </div>
+
+    <div class="card">
+      <h2>Chapter 2 — The New York Times: Flights turned into nightmares</h2>
+      <p>
+        Scenes of crying, pleading, handcuffs, leg irons, and deep fear. Many had lived for years in the U.S., with pending asylum cases and families.
+        Not routine — a moment when dignity was crushed.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Chapter 3 — The Washington Post: Returning to a country without safety</h2>
+      <p>
+        Hidden political arrangements and severe consequences: detention, interrogation, persecution upon arrival in Iran. Real lives at stake.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Chapter 4 — BBC: Fear, confusion, and an uncertain future</h2>
+      <p>
+        Many didn’t understand why they were detained or removed. Some were chained; some fainted. Families were in shock. Serious risks awaited them in Iran.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Chapter 5 — Iran International: The September 29 flight — and my story</h2>
+      <p>
+        At the moment of transfer, overwhelmed by terror, <strong>I cut my wrist</strong> to resist being forced aboard.
+        Officers simply bandaged the wound and <strong>forced me onto the plane</strong> to Tehran. That broke my life — proof my life meant nothing to those in power.
+      </p>
+    </div>
+
+    <div class="card" id="crisis">
+      <h2>Chapter 6 — My current reality: Fighting to stay alive</h2>
+      <p>
+        I am in Iran — not in safety, not in peace, but in <span class="danger">crisis</span>. Under pursuit, threatened, hiding, unable to work or leave legally, danger growing closer every day.
+      </p>
+    </div>
+
+    <div class="card" id="support">
+      <h2>Chapter 7 — My appeal: Help me survive</h2>
+      <p>
+        To escape, I’m asked to pay very high amounts for risky routes — far beyond my means. <strong>Please be my lifeline. Help me stay alive.</strong>
+      </p>
+      <a href="#" class="btn">Support Mehrdad</a>
+    </div>
+
+    <div class="card" id="accounts">
+      <h2>Donation accounts</h2>
+      <ul>
+        <li><strong>IBAN (TRY):</strong> TR60 0001 0012 4078 8760 0250 01 — <strong>Card:</strong> 5124 4004 3259 7591 — <strong>Holder:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (USD):</strong> TR06 0001 0012 4078 8760 0250 03 — <strong>Holder:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (EUR):</strong> TR76 0001 0012 4078 8760 0250 04 — <strong>Holder:</strong> Mehrdad Dalir</li>
+      </ul>
+    </div>
+
+    <div class="card" id="sources">
+      <h2>Sources</h2>
+      <ul class="source-list">
+        <li><a href="https://www.nytimes.com/2025/11/11/world/middleeast/iran-trump-deportation-flight.html" target="_blank" rel="noopener">The New York Times</a></li>
+        <li><a href="https://www.washingtonpost.com" target="_blank" rel="noopener">The Washington Post</a></li>
+        <li><a href="https://www.bbc.com" target="_blank" rel="noopener">BBC News</a></li>
+        <li><a href="https://www.euronews.com/2025/11/11/us-deports-iranians-to-tehran-raising-human-rights-concerns" target="_blank" rel="noopener">Euronews</a></li>
+        <li><a href="https://www.iranintl.com/en/202510033845" target="_blank" rel="noopener">Iran International — testimony</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <strong>mehrdad.dalir2025@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <!-- FARSI -->
+  <div class="tab-content rtl" id="content-fa" role="tabpanel" aria-labelledby="tab-fa">
+    <h1>گزارش چندمنبعی و شهادت شخصی مهرداد دلیر</h1>
+    <p class="tagline">یک بحران مستند، و زندگی‌ای که برای بقا می‌جنگد.</p>
+    <p class="note">بر اساس گزارش‌های نیویورک‌تایمز، واشنگتن‌پست، بی‌بی‌سی، ایران‌اینترنشنال — و تجربهٔ شخصی من.</p>
+
+    <div class="card">
+      <h2>فصل ۱ — یک بحران جهانی و یک سرگذشت شخصی</h2>
+      <p>رسانه‌های بزرگ — <strong>نیویورک‌تایمز</strong>، <strong>واشنگتن‌پست</strong>، <strong>بی‌بی‌سی</strong>، <strong>ایران‌اینترنشنال</strong> — دیپورت اجباری ایرانیان از آمریکا به ایران را مستند کرده‌اند: ترس، اجبار و خطرات جدی حقوق بشری.</p>
+      <p>برای من، <strong>مهرداد دلیر</strong>، این فقط خبر نیست؛ بازتاب چیزی است که از سر گذرانده‌ام.</p>
+    </div>
+
+    <div class="card">
+      <h2>فصل ۲ — نیویورک‌تایمز: پروازهایی که به «کابوس» تبدیل شدند</h2>
+      <p>صحنه‌های گریه، التماس، دست‌بند و پابند، ترس عمیق؛ سال‌ها زندگی در آمریکا؛ پرونده‌های پناهندگی؛ خانواده‌ها. انتقالی عادی نبود؛ کرامت انسانی خرد شد.</p>
+    </div>
+
+    <div class="card">
+      <h2>فصل ۳ — واشنگتن‌پست: بازگشت به کشوری که امنیت ندارد</h2>
+      <p>توافقات پنهانی سیاسی و پیامدهای سنگین: بازداشت، بازجویی و آزار پس از ورود؛ پای جان انسان‌های واقعی در میان است.</p>
+    </div>
+
+    <div class="card">
+      <h2>فصل ۴ — بی‌بی‌سی: ترس، سردرگمی و آینده‌ای نامعلوم</h2>
+      <p>بسیاری نمی‌دانستند چرا بازداشت یا اخراج شدند؛ برخی زنجیر شدند؛ برخی از اضطراب بیهوش شدند؛ خانواده‌ها در شوک؛ در ایران خطرات جدی در انتظارشان بود.</p>
+    </div>
+
+    <div class="card">
+      <h2>فصل ۵ — ایران‌اینترنشنال: پرواز ۲۹ سپتامبر — و روایت من</h2>
+      <p>در لحظهٔ انتقال، زیر فشار ترس، <strong>رگ دستم را زدم</strong> تا سوار نشوم. مأموران فقط باند ساده زدند و <strong>با زور سوارم کردند</strong> به مقصد تهران. آن لحظه زندگی‌ام شکست.</p>
+    </div>
+
+    <div class="card" id="crisis-fa">
+      <h2>فصل ۶ — واقعیت امروز: جنگ برای زنده ماندن</h2>
+      <p>در ایران هستم — نه امن، نه آرام؛ بلکه در <span class="danger">بحران</span>. تحت تعقیب، تهدید، مخفی؛ امکان کار و خروج قانونی ندارم؛ خطر هر روز نزدیک‌تر می‌شود.</p>
+    </div>
+
+    <div class="card" id="support-fa">
+      <h2>فصل ۷ — درخواست من: کمک کنید زنده بمانم</h2>
+      <p>برای خروج، مبالغ سنگین برای مسیرهای پرخطر خواسته‌اند — فراتر از توان من. <strong>حامی جان من باشید.</strong></p>
+      <a href="#" class="btn">حمایت از مهرداد</a>
+    </div>
+
+    <div class="card" id="accounts-fa">
+      <h2>حساب‌های کمک مالی</h2>
+      <ul>
+        <li><strong>شبا (لیر):</strong> TR60 0001 0012 4078 8760 0250 01 — <strong>کارت:</strong> 5124 4004 3259 7591 — <strong>نام:</strong> Mehrdad Dalir</li>
+        <li><strong>شبا (دلار):</strong> TR06 0001 0012 4078 8760 0250 03 — <strong>نام:</strong> Mehrdad Dalir</li>
+        <li><strong>شبا (یورو):</strong> TR76 0001 0012 4078 8760 0250 04 — <strong>نام:</strong> Mehrdad Dalir</li>
+      </ul>
+    </div>
+
+    <div class="card" id="sources-fa">
+      <h2>منابع</h2>
+      <ul class="source-list">
+        <li><a href="https://www.nytimes.com/2025/11/11/world/middleeast/iran-trump-deportation-flight.html" target="_blank">نیویورک‌تایمز</a></li>
+        <li><a href="https://www.washingtonpost.com" target="_blank">واشنگتن‌پست</a></li>
+        <li><a href="https://www.bbc.com" target="_blank">بی‌بی‌سی</a></li>
+        <li><a href="https://www.euronews.com/2025/11/11/us-deports-iranians-to-tehran-raising-human-rights-concerns" target="_blank">یورونیوز</a></li>
+        <li><a href="https://www.iranintl.com/en/202510033845" target="_blank">ایران‌اینترنشنال — شهادت</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact-fa">
+      <h2>تماس</h2>
+      <p>ایمیل: <strong>mehrdad.dalir2025@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <!-- SPANISH -->
+  <div class="tab-content" id="content-es" role="tabpanel" aria-labelledby="tab-es">
+    <h1>Informe multifuente y testimonio personal</h1>
+    <p class="tagline">Una crisis documentada, y una vida luchando por sobrevivir.</p>
+    <p class="note">Basado en informes de The New York Times, The Washington Post, BBC, Iran International — y mi propia experiencia.</p>
+
+    <div class="card">
+      <h2>Capítulo 1 — Una crisis global y una historia personal</h2>
+      <p>Grandes medios — <strong>NYT</strong>, <strong>Washington Post</strong>, <strong>BBC</strong>, <strong>Iran International</strong> — documentaron deportaciones forzadas: miedo, coerción y graves riesgos.</p>
+      <p>Para mí, <strong>Mehrdad Delir</strong>, esto refleja lo que he sobrevivido.</p>
+    </div>
+
+    <div class="card">
+      <h2>Capítulo 2 — NYT: Vuelos convertidos en pesadillas</h2>
+      <p>Llantos, súplicas, esposas, grilletes y miedo profundo; años en EE. UU.; asilos pendientes; familias. No fue rutinario; dignidad aplastada.</p>
+    </div>
+
+    <div class="card">
+      <h2>Capítulo 3 — Washington Post: Regresar a un país sin seguridad</h2>
+      <p>Acuerdos políticos ocultos y consecuencias graves: detención, interrogatorios, persecución al llegar a Irán.</p>
+    </div>
+
+    <div class="card">
+      <h2>Capítulo 4 — BBC: Miedo, confusión y un futuro incierto</h2>
+      <p>Muchos ni entendían por qué fueron detenidos o expulsados; cadenas; desmayos; familias en shock; riesgos serios en Irán.</p>
+    </div>
+
+    <div class="card">
+      <h2>Capítulo 5 — Iran International: El vuelo del 29 de septiembre — y mi historia</h2>
+      <p>En el momento de la transferencia, <strong>me corté la muñeca</strong> para resistir. Me vendaron y <strong>me obligaron a subir al avión</strong> rumbo a Teherán. Ese momento quebró mi vida.</p>
+    </div>
+
+    <div class="card" id="crisis-es">
+      <h2>Capítulo 6 — Mi realidad actual</h2>
+      <p>En Irán, en <span class="danger">crisis</span>: persecución, amenazas, esconderme; sin trabajo ni salida legal; peligro creciente.</p>
+    </div>
+
+    <div class="card" id="support-es">
+      <h2>Capítulo 7 — Mi petición</h2>
+      <p>Rutas de salida muy costosas y riesgosas — fuera de mi alcance. <strong>Por favor, ayúdame a sobrevivir.</strong></p>
+      <a href="#" class="btn">Apoyar a Mehrdad</a>
+    </div>
+
+    <div class="card" id="accounts-es">
+      <h2>Cuentas para donaciones</h2>
+      <ul>
+        <li><strong>IBAN (TRY):</strong> TR60 0001 0012 4078 8760 0250 01 — <strong>Tarjeta:</strong> 5124 4004 3259 7591 — <strong>Titular:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (USD):</strong> TR06 0001 0012 4078 8760 0250 03 — <strong>Titular:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (EUR):</strong> TR76 0001 0012 4078 8760 0250 04 — <strong>Titular:</strong> Mehrdad Dalir</li>
+      </ul>
+    </div>
+
+    <div class="card" id="sources-es">
+      <h2>Fuentes</h2>
+      <ul class="source-list">
+        <li><a href="https://www.nytimes.com/2025/11/11/world/middleeast/iran-trump-deportation-flight.html" target="_blank">The New York Times</a></li>
+        <li><a href="https://www.washingtonpost.com" target="_blank">The Washington Post</a></li>
+        <li><a href="https://www.bbc.com" target="_blank">BBC News</a></li>
+        <li><a href="https://www.euronews.com/2025/11/11/us-deports-iranians-to-tehran-raising-human-rights-concerns" target="_blank">Euronews</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact-es">
+      <h2>Contacto</h2>
+      <p>Email: <strong>mehrdad.dalir2025@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <!-- GERMAN -->
+  <div class="tab-content" id="content-de" role="tabpanel" aria-labelledby="tab-de">
+    <h1>Mehrquellen-Bericht und persönliches Zeugnis</h1>
+    <p class="tagline">Eine dokumentierte Krise und ein Leben im Kampf ums Überleben.</p>
+    <p class="note">Basierend auf Berichten von NYT, Washington Post, BBC, Iran International — und meiner eigenen Erfahrung.</p>
+
+    <div class="card">
+      <h2>Kapitel 1 — Globale Krise und persönliche Geschichte</h2>
+      <p>Große Medien — <strong>NYT</strong>, <strong>Washington Post</strong>, <strong>BBC</strong>, <strong>Iran International</strong> — dokumentierten erzwungene Abschiebungen: Angst, Zwang, schwere Menschenrechtsrisiken.</p>
+      <p>Für mich, <strong>Mehrdad Delir</strong>, spiegelt das wider, was ich überlebt habe.</p>
+    </div>
+
+    <div class="card">
+      <h2>Kapitel 2 — NYT: Flüge wurden zu Albträumen</h2>
+      <p>Weinen, Flehen, Handschellen, Fußfesseln, tiefe Angst; Jahre in den USA; Asylfälle; Familien. Keine Routine — zerbrochene Würde.</p>
+    </div>
+
+    <div class="card">
+      <h2>Kapitel 3 — Washington Post: Rückkehr ohne Sicherheit</h2>
+      <p>Verdeckte politische Abmachungen und schwere Folgen: Festnahme, Verhöre, Verfolgung bei Ankunft in Iran.</p>
+    </div>
+
+    <div class="card">
+      <h2>Kapitel 4 — BBC: Angst, Verwirrung, ungewisse Zukunft</h2>
+      <p>Viele verstanden nicht, warum sie festgenommen oder ausgewiesen wurden; Ketten; Ohnmacht; Familien im Schock; ernste Risiken in Iran.</p>
+    </div>
+
+    <div class="card">
+      <h2>Kapitel 5 — Iran International: Flug 29. September — und meine Geschichte</h2>
+      <p>Im Moment der Überstellung <strong>schnitt ich mir das Handgelenk</strong>, um Widerstand zu leisten; man verband und <strong>zwang mich ins Flugzeug</strong> nach Teheran. Dieser Moment zerbrach mein Leben.</p>
+    </div>
+
+    <div class="card" id="crisis-de">
+      <h2>Kapitel 6 — Aktuelle Realität</h2>
+      <p>In Iran, in <span class="danger">Krise</span>: verfolgt, bedroht, versteckt; keine Arbeit, keine legale Ausreise; wachsende Gefahr.</p>
+    </div>
+
+    <div class="card" id="support-de">
+      <h2>Kapitel 7 — Mein Appell</h2>
+      <p>Sehr teure, riskante Fluchtrouten — außerhalb meiner Mittel. <strong>Bitte hilf mir zu überleben.</strong></p>
+      <a href="#" class="btn">Unterstütze Mehrdad</a>
+    </div>
+
+    <div class="card" id="accounts-de">
+      <h2>Spendenkonten</h2>
+      <ul>
+        <li><strong>IBAN (TRY):</strong> TR60 0001 0012 4078 8760 0250 01 — <strong>Karte:</strong> 5124 4004 3259 7591 — <strong>Inhaber:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (USD):</strong> TR06 0001 0012 4078 8760 0250 03 — <strong>Inhaber:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (EUR):</strong> TR76 0001 0012 4078 8760 0250 04 — <strong>Inhaber:</strong> Mehrdad Dalir</li>
+      </ul>
+    </div>
+
+    <div class="card" id="sources-de">
+      <h2>Quellen</h2>
+      <ul class="source-list">
+        <li><a href="https://www.nytimes.com/2025/11/11/world/middleeast/iran-trump-deportation-flight.html" target="_blank">New York Times</a></li>
+        <li><a href="https://www.washingtonpost.com" target="_blank">Washington Post</a></li>
+        <li><a href="https://www.bbc.com" target="_blank">BBC News</a></li>
+        <li><a href="https://www.euronews.com/2025/11/11/us-deports-iranians-to-tehran-raising-human-rights-concerns" target="_blank">Euronews</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact-de">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <strong>mehrdad.dalir2025@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <!-- RUSSIAN -->
+  <div class="tab-content" id="content-ru" role="tabpanel" aria-labelledby="tab-ru">
+    <h1>Многоисточниковый отчёт и личное свидетельство</h1>
+    <p class="tagline">Задокументированный кризис и жизнь, борющаяся за выживание.</p>
+    <p class="note">На основе материалов NYT, Washington Post, BBC, Iran International — и моего опыта.</p>
+
+    <div class="card">
+      <h2>Глава 1 — Глобальный кризис и личная история</h2>
+      <p>Крупные СМИ — <strong>NYT</strong>, <strong>Washington Post</strong>, <strong>BBC</strong>, <strong>Iran International</strong> — задокументировали принудительные депортации: страх, принуждение, серьёзные риски.</p>
+      <p>Для меня, <strong>Mehrdad Delir</strong>, это отражение пережитого.</p>
+    </div>
+
+    <div class="card">
+      <h2>Глава 2 — NYT: Рейсы превратились в кошмар</h2>
+      <p>Слёзы, мольбы, наручники, кандалы, глубочайший страх; годы в США; дела об убежище; семьи. Не рутина — растоптанное достоинство.</p>
+    </div>
+
+    <div class="card">
+      <h2>Глава 3 — Washington Post: Возвращение без безопасности</h2>
+      <p>Скрытые политические договорённости и тяжёлые последствия: аресты, допросы, преследование по прибытии в Иран.</p>
+    </div>
+
+    <div class="card">
+      <h2>Глава 4 — BBC: Страх, растерянность, неопределённость</h2>
+      <p>Многие не понимали причины; цепи; обмороки; семьи в шоке; серьёзные риски в Иране.</p>
+    </div>
+
+    <div class="card">
+      <h2>Глава 5 — Iran International: Рейс 29 сентября — и моя история</h2>
+      <p>В момент передачи <strong>я перерезал вену</strong>, чтобы сопротивляться; сотрудники перевязали и <strong>силой затащили в самолёт</strong> до Тегерана. Этот момент сломил мою жизнь.</p>
+    </div>
+
+    <div class="card" id="crisis-ru">
+      <h2>Глава 6 — Текущая реальность</h2>
+      <p>В Иране, в <span class="danger">кризисе</span>: преследование, угрозы, скрытность; без работы и легального выхода; растущая опасность.</p>
+    </div>
+
+    <div class="card" id="support-ru">
+      <h2>Глава 7 — Просьба</h2>
+      <p>Очень дорогие рискованные маршруты — вне моих сил. <strong>Пожалуйста, помогите мне выжить.</strong></p>
+      <a href="#" class="btn">Поддержать Мехрдада</a>
+    </div>
+
+    <div class="card" id="accounts-ru">
+      <h2>Счета для пожертвований</h2>
+      <ul>
+        <li><strong>IBAN (TRY):</strong> TR60 0001 0012 4078 8760 0250 01 — <strong>Карта:</strong> 5124 4004 3259 7591 — <strong>Владелец:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (USD):</strong> TR06 0001 0012 4078 8760 0250 03 — <strong>Владелец:</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (EUR):</strong> TR76 0001 0012 4078 8760 0250 04 — <strong>Владелец:</strong> Mehrdad Dalir</li>
+      </ul>
+    </div>
+
+    <div class="card" id="sources-ru">
+      <h2>Источники</h2>
+      <ul class="source-list">
+        <li><a href="https://www.nytimes.com/2025/11/11/world/middleeast/iran-trump-deportation-flight.html" target="_blank">NYT</a></li>
+        <li><a href="https://www.washingtonpost.com" target="_blank">Washington Post</a></li>
+        <li><a href="https://www.bbc.com" target="_blank">BBC News</a></li>
+        <li><a href="https://www.euronews.com/2025/11/11/us-deports-iranians-to-tehran-raising-human-rights-concerns" target="_blank">Euronews</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact-ru">
+      <h2>Контакты</h2>
+      <p>Email: <strong>mehrdad.dalir2025@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <!-- FRENCH -->
+  <div class="tab-content" id="content-fr" role="tabpanel" aria-labelledby="tab-fr">
+    <h1>Rapport multisource et témoignage personnel</h1>
+    <p class="tagline">Une crise documentée, et une vie qui se bat pour survivre.</p>
+    <p class="note">Basé sur des articles du New York Times, du Washington Post, de la BBC, d’Iran International — et sur mon expérience personnelle.</p>
+
+    <div class="card">
+      <h2>Chapitre 1 — Crise mondiale et histoire personnelle</h2>
+      <p>Grands médias — <strong>NYT</strong>, <strong>Washington Post</strong>, <strong>BBC</strong>, <strong>Iran International</strong> — ont documenté des déportations forcées: peur, coercition, risques graves.</p>
+      <p>Pour moi, <strong>Mehrdad Delir</strong>, c’est le reflet de ce que j’ai vécu.</p>
+    </div>
+
+    <div class="card">
+      <h2>Chapitre 2 — NYT : Des vols devenus des cauchemars</h2>
+      <p>Larmes, supplications, menottes, chaînes aux pieds et peur profonde; années aux États-Unis; asiles en cours; familles. Pas routinier — dignité brisée.</p>
+    </div>
+
+    <div class="card">
+      <h2>Chapitre 3 — Washington Post : Retour sans sécurité</h2>
+      <p>Accords politiques cachés et lourdes conséquences: détention, interrogatoires, persécution à l’arrivée en Iran.</p>
+    </div>
+
+    <div class="card">
+      <h2>Chapitre 4 — BBC : Peur, confusion, avenir incertain</h2>
+      <p>Beaucoup ne comprenaient pas pourquoi ils ont été arrêtés ou expulsés; chaînes; évanouissements; familles sous le choc; risques sérieux en Iran.</p>
+    </div>
+
+    <div class="card">
+      <h2>Chapitre 5 — Iran International : Vol du 29 septembre — et mon récit</h2>
+      <p>Au moment du transfert, submergé par la peur, <strong>je me suis ouvert le poignet</strong> pour résister; on a bandé et <strong>m’a forcé à monter</strong> vers Téhéran. Ce moment a brisé ma vie.</p>
+    </div>
+
+    <div class="card" id="crisis-fr">
+      <h2>Chapitre 6 — Réalité actuelle</h2>
+      <p>En Iran, en <span class="danger">crise</span> : poursuites, menaces, se cacher; sans travail ni sortie légale; danger croissant.</p>
+    </div>
+
+    <div class="card" id="support-fr">
+      <h2>Chapitre 7 — Appel</h2>
+      <p>Routes d’évasion très coûteuses et risquées — au-delà de mes moyens. <strong>Aidez-moi à survivre.</strong></p>
+      <a href="#" class="btn">Soutenir Mehrdad</a>
+    </div>
+
+    <div class="card" id="accounts-fr">
+      <h2>Comptes de don</h2>
+      <ul>
+        <li><strong>IBAN (TRY) :</strong> TR60 0001 0012 4078 8760 0250 01 — <strong>Carte :</strong> 5124 4004 3259 7591 — <strong>Titulaire :</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (USD) :</strong> TR06 0001 0012 4078 8760 0250 03 — <strong>Titulaire :</strong> Mehrdad Dalir</li>
+        <li><strong>IBAN (EUR) :</strong> TR76 0001 0012 4078 8760 0250 04 — <strong>Titulaire :</strong> Mehrdad Dalir</li>
+      </ul>
+    </div>
+
+    <div class="card" id="sources-fr">
+      <h2>Sources</h2>
+      <ul class="source-list">
+        <li><a href="https://www.nytimes.com/2025/11/11/world/middleeast/iran-trump-deportation-flight.html" target="_blank">NYT</a></li>
+        <li><a href="https://www.washingtonpost.com" target="_blank">Washington Post</a></li>
+        <li><a href="https://www.bbc.com" target="_blank">BBC News</a></li>
+        <li><a href="https://www.euronews.com/2025/11/11/us-deports-iranians-to-tehran-raising-human-rights-concerns" target="_blank">Euronews</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact-fr">
+      <h2>Contact</h2>
+      <p>Email : <strong>mehrdad.dalir2025@gmail.com</strong></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(lang){
+    // hide all contents
+    document.querySelectorAll('.tab-content').forEach(el=>{
+      el.classList.remove('active');
+      el.classList.remove('rtl');
+    });
+    // deactivate all buttons
+    document.querySelectorAll('.lang-tabs button').forEach(btn=>{
+      btn.classList.remove('active');
+      btn.setAttribute('aria-selected','false');
+    });
+    // show target content
+    const content = document.getElementById('content-'+lang);
+    if(content){
+      content.classList.add('active');
+      if(lang==='fa'){ content.classList.add('rtl'); }
+    }
+    // activate button
+    const tab = document.getElementById('tab-'+lang);
+    if(tab){
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+    }
+  }
+  // ensure default tab is active on load
+  openTab('en');
+</script>
+
+</body>
+</html>
